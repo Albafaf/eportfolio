@@ -135,22 +135,11 @@ footer {
   text-decoration: underline;
 }
 
-.gallery {
-  display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  padding: 10px 0;
-  scroll-behavior: smooth; /* smooth scrolling */
-}
-
-.gallery img {
-  height: 200px; /* set desired height */
-  border-radius: 8px;
-  flex: 0 0 auto; /* keeps images from shrinking */
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05); /* subtle zoom on hover */
+.project-thumb {
+  width: 200px;          /* fills the card width */
+  height: 250px;        /* fixed height (adjust as you like) */
+  object-fit: fill;    /* keeps aspect ratio, crops edges if needed */
+  border-radius: 8px;   /* matches your card’s rounded corners */
+  margin-bottom: 15px;  /* space below image */
+  display: block;
 }
