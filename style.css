@@ -134,3 +134,23 @@ footer {
 .project a:hover {
   text-decoration: underline;
 }
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+  scroll-behavior: smooth; /* smooth scrolling */
+}
+
+.gallery img {
+  height: 200px; /* set desired height */
+  border-radius: 8px;
+  flex: 0 0 auto; /* keeps images from shrinking */
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* subtle zoom on hover */
+}
